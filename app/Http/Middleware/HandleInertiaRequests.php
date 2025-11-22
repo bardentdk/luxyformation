@@ -39,10 +39,10 @@ class HandleInertiaRequests extends Middleware
                 'error' => $request->session()->get('error'),
                 'info' => $request->session()->get('info'),
             ],
-            'ziggy' => fn () => [
-                ...(new \Tightenco\Ziggy\Ziggy)->toArray(),
-                'location' => $request->url(),
-            ],
+            // 'ziggy' => fn () => [
+            //     ...(new \Tightenco\Ziggy\Ziggy)->toArray(),
+            //     'location' => $request->url(),
+            // ],
         ];
     }
 }
